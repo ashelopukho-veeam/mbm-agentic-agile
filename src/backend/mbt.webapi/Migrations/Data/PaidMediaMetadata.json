@@ -1,0 +1,147 @@
+{
+  "Title": "Global Region Paid Media",
+  "Children": [
+    {
+      "Title": "WW",
+      "Children": [
+        {
+          "Title": "Worldwide"
+        }
+      ]
+    },
+    {
+      "Title": "NA",
+      "Children": [
+        {
+          "Title": "United States"
+        },
+        {
+          "Title": "Canada"
+        }
+      ]
+    },
+    {
+      "Title": "LATAM",
+      "Children": [
+        {
+          "Title": "SOLA"
+        },
+        {
+          "Title": "NOLA"
+        },
+        {
+          "Title": "Mexico"
+        },
+        {
+          "Title": "Brazil"
+        }
+      ]
+    },
+    {
+      "Title": "EMEA",
+      "Children": [
+        {
+          "Title": "UK/Irl"
+        },
+        {
+          "Title": "Turkey"
+        },
+        {
+          "Title": "Switzerland"
+        },
+        {
+          "Title": "Sweden/Finland"
+        },
+        {
+          "Title": "SEE"
+        },
+        {
+          "Title": "Russia & CIS"
+        },
+        {
+          "Title": "Poland and Baltics"
+        },
+        {
+          "Title": "Netherlands"
+        },
+        {
+          "Title": "Middle East"
+        },
+        {
+          "Title": "Mediterranean"
+        },
+        {
+          "Title": "Italy"
+        },
+        {
+          "Title": "Iberia"
+        },
+        {
+          "Title": "Germany"
+        },
+        {
+          "Title": "France & FR speaking Africa"
+        },
+        {
+          "Title": "Denmark/Norway"
+        },
+        {
+          "Title": "CEE"
+        },
+        {
+          "Title": "Belux"
+        },
+        {
+          "Title": "Austria"
+        },
+        {
+          "Title": "Africa"
+        }
+      ]
+    },
+    {
+      "Title": "APJ",
+      "Children": [
+        {
+          "Title": "Thailand"
+        },
+        {
+          "Title": "Taiwan"
+        },
+        {
+          "Title": "Singapore"
+        },
+        {
+          "Title": "Malaysia"
+        },
+        {
+          "Title": "Korea"
+        },
+        {
+          "Title": "Japan"
+        },
+        {
+          "Title": "Indonesia"
+        },
+        {
+          "Title": "India/SAARC"
+        },
+        {
+          "Title": "Hong Kong"
+        },
+        {
+          "Title": "China"
+        },
+        {
+          "Title": "ANZ"
+        },
+        {
+          "Title": "Emerging"
+        },
+        {
+          "Title": "SEAK All"
+        }
+      ]
+    }
+  ]
+}

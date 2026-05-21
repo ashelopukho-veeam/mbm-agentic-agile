@@ -1,0 +1,61 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>11</LangVersion>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 't' "/>
+  <ItemGroup>
+    <PackageReference Include="Ardalis.ApiEndpoints" Version="4.1.0"/>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1"/>
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.9.2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.2" />
+    <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="6.5.1"/>
+    <PackageReference Include="JetBrains.Annotations" Version="2024.2.0" />
+    <PackageReference Include="MediatR" Version="12.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
+    <PackageReference Include="Microsoft.Graph" Version="5.56.0" />
+    <PackageReference Include="microsoft.identity.web" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Identity.Web.GraphServiceClient" Version="3.0.0" />
+    <PackageReference Include="MongoDB.Analyzer" Version="1.4.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.27.0" />
+    <PackageReference Include="MongoDBMigrations" Version="2.2.0"/>
+    <PackageReference Include="NetArchTest.Rules" Version="1.3.2" />
+    <PackageReference Include="NLog.Targets.MicrosoftTeams" Version="5.0.0" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.11" />
+    <PackageReference Include="prometheus-net.AspNetCore" Version="8.2.1" />
+    <PackageReference Include="Quartz.AspNetCore" Version="3.11.0" />
+    <PackageReference Include="Scrutor" Version="4.2.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="NETCore.MailKit" Version="2.1.0"/>
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.6.2" />
+    <PackageReference Include="WorkflowCore" Version="3.10.0" />
+    <PackageReference Include="WorkflowCore.Persistence.MongoDB" Version="3.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="WorkflowCore"/>
+    <None Remove="WF\"/>
+    <None Remove="WF\Steps\"/>
+    <None Remove="WorkflowCore.Persistence.MongoDB"/>
+    <None Remove="Extensions\"/>
+    <None Remove="BuiltIn\MailTempaltes\"/>
+    <None Update="Migrations\Data\Advertising_2022_Transfers_to fix _Program_value.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WF\Steps\"/>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="Migrations\Data\PaidMediaMetadata.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\.dockerignore">
+      <Link>.dockerignore</Link>
+    </Content>
+  </ItemGroup>
+</Project>
