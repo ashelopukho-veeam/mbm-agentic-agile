@@ -6,3 +6,6 @@
 # IDE — global
 .idea/
 .vs/
+
+# MCP server config — may contain personal access tokens, keep local only
+mcp.json
